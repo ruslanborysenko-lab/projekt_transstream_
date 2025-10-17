@@ -12,8 +12,8 @@ import numpy as np
 env = dotenv_values(".env")
 if "OPENAI_API_KEY" in st.secrets:
     env["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
-
 openai_client = OpenAI(api_key=env["OPENAI_API_KEY"])
+
 
 # Настройка заголовка приложения
 st.title("Analysis of the number of employees in the warehouse")
